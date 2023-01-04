@@ -1,0 +1,110 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "json-server 공부하기",
+      "description": "json-server 공부하기",
+      "endDate": "2022-01-04T03:25",
+      "isCompleted": "할 일",
+      "manager": "이주영"
+    },
+    {
+      "id": 2,
+      "title": "react",
+      "description": "react공부하기",
+      "endDate": "2022-01-04T03:26",
+      "isCompleted": "할 일",
+      "manager": "이주영"
+    },
+    {
+      "title": "나나나",
+      "description": "집갈랭",
+      "endDate": "2023-01-14T18:25",
+      "isCompleted": "",
+      "manager": "조정택",
+      "id": 3
+    },
+    {
+      "title": "",
+      "description": "",
+      "endDate": "",
+      "isCompleted": "",
+      "manager": "이정우",
+      "id": 4
+    },
+    {
+      "title": "ㅁㄴㅇ",
+      "description": "ㅁㄴㅇ",
+      "endDate": "2023-01-04T18:23",
+      "isCompleted": "진행중",
+      "manager": "",
+      "id": 5
+    },
+    {
+      "title": "",
+      "description": "",
+      "endDate": "",
+      "isCompleted": "할 일",
+      "manager": "이정우",
+      "id": 6
+    },
+    {
+      "title": "하이",
+      "description": "나는정우야",
+      "endDate": "2023-01-14T18:23",
+      "isCompleted": "",
+      "manager": "이정우",
+      "id": 7
+    }
+  ],
+  "working": [
+    {
+      "id": 1,
+      "title": "json-server Docs보기",
+      "description": "json-server Docs보기",
+      "endDate": "2022-01-04T03:27",
+      "isCompleted": "진행중",
+      "manager": "이주영"
+    },
+    {
+      "id": 2,
+      "title": "시리즈 읽기",
+      "description": "시리즈 읽어보기",
+      "endDate": "2022-01-04T03:29",
+      "isCompleted": "진행중",
+      "manager": "이정우"
+    }
+  ],
+  "done": [
+    {
+      "id": 1,
+      "title": "json-server 적용하기",
+      "description": "json-server 적용하기",
+      "endDate": "2022-01-04T03:40",
+      "isCompleted": "완료",
+      "manager": "이정우"
+    },
+    {
+      "id": 2,
+      "title": "시리즈 읽기",
+      "description": "시리즈 읽어보기",
+      "endDate": "2022-01-04T03:42",
+      "isCompleted": "완료",
+      "manager": "조정택"
+    }
+  ],
+  "manager": [
+    {
+      "id": 1,
+      "name": "이정우"
+    },
+    {
+      "id": 2,
+      "name": "조정택"
+    },
+    {
+      "id": 3,
+      "name": "이주영"
+    }
+  ]
+}
