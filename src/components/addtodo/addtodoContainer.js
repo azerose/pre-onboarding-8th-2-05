@@ -45,7 +45,6 @@ const AddToDoContainer = () => {
     setEndDate("");
     setIsCompleted("");
     setManager("");
-    setIsOpen(false);
   };
 
   return (
@@ -61,6 +60,7 @@ const AddToDoContainer = () => {
       description={description}
       title={title}
       endDate={endDate}
+      isCompleted={isCompleted}
     />
   );
 };

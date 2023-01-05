@@ -27,7 +27,7 @@ const AddToDoPresenter = (props) => {
         </div>
         <div>
           상태
-          <select onChange={props.onChangeState} value={props.manager}>
+          <select onChange={props.onChangeState} value={props.isCompleted}>
             <option>진행상황</option>
             <option value="할 일">할일</option>
             <option value="진행중">진행중</option>
@@ -38,7 +38,7 @@ const AddToDoPresenter = (props) => {
           <h2>담당자</h2>
           <div onClick={props.onClickOpen}>
             <input type="text" readOnly value={props.manager} />
-            <div>{props.isOpen && <ManagerContainer />}</div>
+            <div>{props.isOpen ? <ManagerContainer /> : <></>}</div>
           </div>
         </div>
         <S.SaveBtn onClick={props.onClickAddTodo}>저장</S.SaveBtn>

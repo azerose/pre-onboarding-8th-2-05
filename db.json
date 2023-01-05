@@ -1,22 +1,6 @@
 {
   "todos": [
     {
-      "id": 1,
-      "title": "json-server 공부하기",
-      "description": "json-server 공부하기",
-      "endDate": "2022-01-04T03:25",
-      "isCompleted": "할 일",
-      "manager": "이주영"
-    },
-    {
-      "id": 2,
-      "title": "react",
-      "description": "react공부하기",
-      "endDate": "2022-01-04T03:26",
-      "isCompleted": "할 일",
-      "manager": "이주영"
-    },
-    {
       "title": "나나나",
       "description": "집갈랭",
       "endDate": "2023-01-14T18:25",
@@ -79,17 +63,89 @@
       "isCompleted": "할 일",
       "manager": "조정택",
       "id": 10
+    },
+    {
+      "title": "asdsda",
+      "description": "todo",
+      "endDate": "2023-01-05T11:00",
+      "isCompleted": "할 일",
+      "manager": "조정택",
+      "id": 11
+    },
+    {
+      "title": "asdsad",
+      "description": "asdasd",
+      "endDate": "2023-01-05T23:01",
+      "isCompleted": "진행중",
+      "manager": "이주영",
+      "id": 12
+    },
+    {
+      "title": "asdads",
+      "description": "sadasd",
+      "endDate": "2023-01-13T11:03",
+      "isCompleted": "할 일",
+      "manager": "이정우",
+      "id": 13
+    },
+    {
+      "title": "",
+      "description": "",
+      "endDate": "",
+      "isCompleted": "",
+      "manager": "",
+      "id": 14
+    },
+    {
+      "title": "",
+      "description": "",
+      "endDate": "",
+      "isCompleted": "",
+      "manager": "",
+      "id": 15
+    },
+    {
+      "title": "asdasd",
+      "description": "sdaasdasd",
+      "endDate": "2023-01-21T11:06",
+      "isCompleted": "진행중",
+      "manager": "이정우",
+      "id": 16
+    },
+    {
+      "title": "asddas",
+      "description": "asdasd",
+      "endDate": "",
+      "isCompleted": "진행중",
+      "manager": "조정택",
+      "id": 17
+    },
+    {
+      "title": "",
+      "description": "",
+      "endDate": "",
+      "isCompleted": "",
+      "manager": "이주영",
+      "id": 18
+    },
+    {
+      "title": "asasd",
+      "description": "asdsa",
+      "endDate": "2023-01-14T11:09",
+      "isCompleted": "할 일",
+      "manager": "조정택",
+      "id": 19
+    },
+    {
+      "title": "asddsa",
+      "description": "asdasads",
+      "endDate": "2023-01-20T11:14",
+      "isCompleted": "진행중",
+      "manager": "이정우",
+      "id": 20
     }
   ],
   "working": [
-    {
-      "id": 1,
-      "title": "json-server Docs보기",
-      "description": "json-server Docs보기",
-      "endDate": "2022-01-04T03:27",
-      "isCompleted": "진행중",
-      "manager": "이주영"
-    },
     {
       "id": 2,
       "title": "시리즈 읽기",
@@ -107,14 +163,6 @@
       "endDate": "2022-01-04T03:40",
       "isCompleted": "완료",
       "manager": "이정우"
-    },
-    {
-      "id": 2,
-      "title": "시리즈 읽기",
-      "description": "시리즈 읽어보기",
-      "endDate": "2022-01-04T03:42",
-      "isCompleted": "완료",
-      "manager": "조정택"
     }
   ],
   "manager": [
