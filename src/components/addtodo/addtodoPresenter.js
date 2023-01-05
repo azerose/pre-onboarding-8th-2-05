@@ -1,24 +1,33 @@
 import ManagerContainer from "../manager/managerContainer";
+import * as S from "./addtodoStyle";
 
 const AddToDoPresenter = (props) => {
   return (
     <>
-      <div>
+      <S.MainWrapper>
         <div>
           <h2>제목</h2>
-          <input type="text" onChange={props.onChangeTitle} />
+          <input
+            type="text"
+            onChange={props.onChangeTitle}
+            value={props.title}
+          />
         </div>
         <div>
           <h2>내용</h2>
-          <textarea onChange={props.onChangeDesc} />
+          <textarea onChange={props.onChangeDesc} value={props.description} />
         </div>
         <div>
           <h2>마감일</h2>
-          <input type="datetime-local" onChange={props.onChangeEndDate} />
+          <input
+            type="datetime-local"
+            onChange={props.onChangeEndDate}
+            value={props.endDate}
+          />
         </div>
         <div>
           상태
-          <select onChange={props.onChangeState}>
+          <select onChange={props.onChangeState} value={props.manager}>
             <option>진행상황</option>
             <option value="할 일">할일</option>
             <option value="진행중">진행중</option>
@@ -32,8 +41,8 @@ const AddToDoPresenter = (props) => {
             <div>{props.isOpen && <ManagerContainer />}</div>
           </div>
         </div>
-        <button onClick={props.onClickAddTodo}>저장</button>
-      </div>
+        <S.SaveBtn onClick={props.onClickAddTodo}>저장</S.SaveBtn>
+      </S.MainWrapper>
     </>
   );
 };

@@ -1,7 +1,7 @@
-import AddToDoContainer from "../src/components/addtodo/addtodoContainer";
+import ToDoListContainer from "../src/components/todolist/todolistContainer";
 
 const Home = () => {
-  return <AddToDoContainer />;
+  return <ToDoListContainer />;
 };
 
 export default Home;
