@@ -8,16 +8,19 @@ const ManagerContainer = () => {
   const [managerList, setManagerList] = useState([]);
   const [, setIsOpen] = useRecoilState(IsOpenState);
   const [manager, setManager] = useRecoilState(ManagerState);
+  const [managerValue, setManagerValue] = useState("");
 
   const ReadManager = async () => {
     const { data } = await axios.get("http://localhost:4444/manager");
-    setManagerList(data);
+    const result = data.filter((el) => el.name.includes(managerValue));
+    setManagerList(result);
+    console.log(result);
   };
-  useMemo(() => {
+  useEffect(() => {
     (async () => {
       await ReadManager();
     })();
-  }, []);
+  }, [managerValue]);
 
   useEffect(() => {
     setIsOpen((prev) => !prev);
@@ -27,8 +30,17 @@ const ManagerContainer = () => {
     setManager(e.currentTarget.id);
   };
 
+  const onChangeManager = (e) => {
+    setManagerValue(e.target.value);
+  };
+
   return (
-    <ManagerPresenter managerList={managerList} onClickSelect={onClickSelect} />
+    <ManagerPresenter
+      managerList={managerList}
+      onClickSelect={onClickSelect}
+      onChangeManager={onChangeManager}
+      managerValue={managerValue}
+    />
   );
 };
 

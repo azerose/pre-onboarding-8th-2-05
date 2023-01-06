@@ -41,7 +41,9 @@ const AddToDoPresenter = (props) => {
             <div>{props.isOpen ? <ManagerContainer /> : <></>}</div>
           </div>
         </div>
-        <S.SaveBtn onClick={props.onClickAddTodo}>
+        <S.SaveBtn
+          onClick={props.isEdit ? props.onClickUpdate : props.onClickAddTodo}
+        >
           {props.isEdit ? "수정" : "저장"}
         </S.SaveBtn>
       </S.MainWrapper>

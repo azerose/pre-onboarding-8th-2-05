@@ -1,4 +1,5 @@
 import AddTodo from "../../../pages/addtodo";
+import EditTodo from "../../../pages/edittodo";
 import DoneItem from "../done/doneitem";
 import InProgressItem from "../inprogress/inprogressitem";
 import ToDoItem from "../todoitem/todoitem";
@@ -11,6 +12,12 @@ const ToDoListPresenter = (props) => {
       {props.isOpen && (
         <>
           <AddTodo />
+          <S.CancelBtn onClick={props.onClickCancel}>닫기</S.CancelBtn>
+        </>
+      )}
+      {props.isEdit && (
+        <>
+          <EditTodo />
           <S.CancelBtn onClick={props.onClickCancel}>닫기</S.CancelBtn>
         </>
       )}

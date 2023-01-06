@@ -77,17 +77,54 @@ const AddToDoContainer = (props) => {
   };
 
   const onClickUpdate = async (e) => {
-    await axios.request({
-      url: `http://localhost:4444/todos/${e.target.id}`,
-      method: "put",
-      data: {
-        title,
-        description,
-        endDate,
-        isCompleted,
-        manager,
-      },
-    });
+    if (isCompleted === "진행중") {
+      await axios.request({
+        url: `http://localhost:4444/working/${e.target.id}`,
+        method: "put",
+        data: {
+          title,
+          description,
+          endDate,
+          isCompleted,
+          manager,
+        },
+      });
+      setDescription("");
+      setTitle("");
+      setEndDate("");
+      setIsCompleted("");
+      setManager("");
+    }
+    if (isCompleted === "완료") {
+      await axios.request({
+        url: `http://localhost:4444/done/${e.target.id}`,
+        method: "put",
+        data: {
+          title,
+          description,
+          endDate,
+          isCompleted,
+          manager,
+        },
+      });
+    } else {
+      await axios.request({
+        url: `http://localhost:4444/todos/${e.target.id}`,
+        method: "put",
+        data: {
+          title,
+          description,
+          endDate,
+          isCompleted,
+          manager,
+        },
+      });
+      setDescription("");
+      setTitle("");
+      setEndDate("");
+      setIsCompleted("");
+      setManager("");
+    }
   };
 
   return (
