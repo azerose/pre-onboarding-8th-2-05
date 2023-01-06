@@ -33,116 +33,28 @@
       "id": 6
     },
     {
-      "title": "하이",
-      "description": "나는정우야",
-      "endDate": "2023-01-14T18:23",
-      "isCompleted": "",
+      "title": "수정테스트",
+      "description": "ㅈㄱㄴ",
+      "endDate": "2023-01-05T08:50",
+      "isCompleted": "할 일",
       "manager": "이정우",
-      "id": 7
-    },
-    {
-      "title": "조정택 바보",
-      "description": "정택이는 바보다 바보",
-      "endDate": "2023-01-04T07:25",
-      "isCompleted": "할 일",
-      "manager": "조정택",
-      "id": 8
-    },
-    {
-      "title": "",
-      "description": "",
-      "endDate": "",
-      "isCompleted": "",
-      "manager": "",
-      "id": 9
-    },
-    {
-      "title": "asd",
-      "description": "todo",
-      "endDate": "2023-01-05T10:58",
-      "isCompleted": "할 일",
-      "manager": "조정택",
       "id": 10
     },
     {
-      "title": "asdsda",
-      "description": "todo",
-      "endDate": "2023-01-05T11:00",
+      "title": "asddas",
+      "description": "asdadsa",
+      "endDate": "2023-01-13T20:57",
       "isCompleted": "할 일",
-      "manager": "조정택",
+      "manager": "이정우",
       "id": 11
     },
     {
-      "title": "asdsad",
-      "description": "asdasd",
-      "endDate": "2023-01-05T23:01",
-      "isCompleted": "진행중",
+      "title": "되나",
+      "description": "123",
+      "endDate": "2023-01-05T20:01",
+      "isCompleted": "할 일",
       "manager": "이주영",
       "id": 12
-    },
-    {
-      "title": "asdads",
-      "description": "sadasd",
-      "endDate": "2023-01-13T11:03",
-      "isCompleted": "할 일",
-      "manager": "이정우",
-      "id": 13
-    },
-    {
-      "title": "",
-      "description": "",
-      "endDate": "",
-      "isCompleted": "",
-      "manager": "",
-      "id": 14
-    },
-    {
-      "title": "",
-      "description": "",
-      "endDate": "",
-      "isCompleted": "",
-      "manager": "",
-      "id": 15
-    },
-    {
-      "title": "asdasd",
-      "description": "sdaasdasd",
-      "endDate": "2023-01-21T11:06",
-      "isCompleted": "진행중",
-      "manager": "이정우",
-      "id": 16
-    },
-    {
-      "title": "asddas",
-      "description": "asdasd",
-      "endDate": "",
-      "isCompleted": "진행중",
-      "manager": "조정택",
-      "id": 17
-    },
-    {
-      "title": "",
-      "description": "",
-      "endDate": "",
-      "isCompleted": "",
-      "manager": "이주영",
-      "id": 18
-    },
-    {
-      "title": "asasd",
-      "description": "asdsa",
-      "endDate": "2023-01-14T11:09",
-      "isCompleted": "할 일",
-      "manager": "조정택",
-      "id": 19
-    },
-    {
-      "title": "asddsa",
-      "description": "asdasads",
-      "endDate": "2023-01-20T11:14",
-      "isCompleted": "진행중",
-      "manager": "이정우",
-      "id": 20
     }
   ],
   "working": [
@@ -153,6 +65,14 @@
       "endDate": "2022-01-04T03:29",
       "isCompleted": "진행중",
       "manager": "이정우"
+    },
+    {
+      "title": "dasdas",
+      "description": "dadsads",
+      "endDate": "2023-01-21T20:54",
+      "isCompleted": "진행중",
+      "manager": "이정우",
+      "id": 3
     }
   ],
   "done": [
@@ -163,6 +83,14 @@
       "endDate": "2022-01-04T03:40",
       "isCompleted": "완료",
       "manager": "이정우"
+    },
+    {
+      "title": "asddas",
+      "description": "adsdasdas",
+      "endDate": "2023-01-21T20:56",
+      "isCompleted": "완료",
+      "manager": "조정택",
+      "id": 2
     }
   ],
   "manager": [

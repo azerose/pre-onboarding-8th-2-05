@@ -4,7 +4,7 @@ import { useRecoilState } from "recoil";
 import { IsOpenState, ManagerState } from "../../commons/store";
 import AddToDoPresenter from "./addtodoPresenter";
 
-const AddToDoContainer = () => {
+const AddToDoContainer = (props) => {
   const [description, setDescription] = useState("");
   const [title, setTitle] = useState("");
   const [endDate, setEndDate] = useState("");
@@ -33,18 +33,61 @@ const AddToDoContainer = () => {
   };
 
   const onClickAddTodo = async () => {
-    await axios.post("http://localhost:4444/todos", {
-      title,
-      description,
-      endDate,
-      isCompleted,
-      manager,
+    if (isCompleted === "진행중") {
+      await axios.post("http://localhost:4444/working", {
+        title,
+        description,
+        endDate,
+        isCompleted,
+        manager,
+      });
+      setDescription("");
+      setTitle("");
+      setEndDate("");
+      setIsCompleted("");
+      setManager("");
+    }
+    if (isCompleted === "완료") {
+      await axios.post("http://localhost:4444/done", {
+        title,
+        description,
+        endDate,
+        isCompleted,
+        manager,
+      });
+      setDescription("");
+      setTitle("");
+      setEndDate("");
+      setIsCompleted("");
+      setManager("");
+    } else {
+      await axios.post("http://localhost:4444/todos", {
+        title,
+        description,
+        endDate,
+        isCompleted,
+        manager,
+      });
+      setDescription("");
+      setTitle("");
+      setEndDate("");
+      setIsCompleted("");
+      setManager("");
+    }
+  };
+
+  const onClickUpdate = async (e) => {
+    await axios.request({
+      url: `http://localhost:4444/todos/${e.target.id}`,
+      method: "put",
+      data: {
+        title,
+        description,
+        endDate,
+        isCompleted,
+        manager,
+      },
     });
-    setDescription("");
-    setTitle("");
-    setEndDate("");
-    setIsCompleted("");
-    setManager("");
   };
 
   return (
@@ -61,6 +104,8 @@ const AddToDoContainer = () => {
       title={title}
       endDate={endDate}
       isCompleted={isCompleted}
+      isEdit={props.isEdit}
+      onClickUpdate={onClickUpdate}
     />
   );
 };

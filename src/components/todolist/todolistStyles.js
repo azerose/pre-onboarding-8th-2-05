@@ -7,7 +7,7 @@ export const AddBtn = styled.button`
 
 export const CancelBtn = styled.button`
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   top: 23.8%;
   left: 62%;
   transform: translate(-50%, -50%);

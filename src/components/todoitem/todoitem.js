@@ -1,3 +1,4 @@
+import EditTodo from "../../../pages/edittodo";
 import * as S from "./todoitemStyle";
 
 const todo = (props) => {
@@ -13,7 +14,14 @@ const todo = (props) => {
         <S.DeleteBtn id={props.todo.id} onClick={props.onClickDeleteTodo}>
           삭제
         </S.DeleteBtn>
-        <S.EditBtn>수정</S.EditBtn>
+        <S.EditBtn onClick={props.onClickEdit}>수정</S.EditBtn>
+        {props.isEdit ? (
+          <>
+            <EditTodo />
+          </>
+        ) : (
+          <></>
+        )}
       </S.MainWrapper>
     </>
   );

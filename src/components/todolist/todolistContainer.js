@@ -7,6 +7,7 @@ const ToDoListContainer = () => {
   const [todoList, setTodoList] = useState([]);
   const [inProgress, setInProgress] = useState([]);
   const [done, setDone] = useState([]);
+  const [isEdit, setIsEdit] = useState(false);
 
   useEffect(() => {
     (async () => {
@@ -50,6 +51,10 @@ const ToDoListContainer = () => {
     await ReadDone();
   };
 
+  const onClickEdit = () => {
+    setIsEdit(true);
+  };
+
   const onClickAddOpen = () => {
     setIsOpen(true);
   };
@@ -69,6 +74,8 @@ const ToDoListContainer = () => {
       onClickDeleteTodo={onClickDeleteTodo}
       onClickDeleteInProgress={onClickDeleteInProgress}
       onClickDeleteDone={onClickDeleteDone}
+      onClickEdit={onClickEdit}
+      isEdit={isEdit}
     />
   );
 };

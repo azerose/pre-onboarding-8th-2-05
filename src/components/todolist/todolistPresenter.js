@@ -5,6 +5,7 @@ import ToDoItem from "../todoitem/todoitem";
 import * as S from "./todolistStyles";
 
 const ToDoListPresenter = (props) => {
+  const isEdit = props.isEdit;
   return (
     <>
       {props.isOpen && (
@@ -19,8 +20,10 @@ const ToDoListPresenter = (props) => {
           {props.todoList?.map((todo) => (
             <div key={todo.id}>
               <ToDoItem
-                todo={todo}
                 onClickDeleteTodo={props.onClickDeleteTodo}
+                onClickEdit={props.onClickEdit}
+                todo={todo}
+                isEdit={isEdit}
               />
             </div>
           ))}
@@ -30,8 +33,10 @@ const ToDoListPresenter = (props) => {
           {props.inProgress.map((working) => (
             <div key={working.id}>
               <InProgressItem
-                working={working}
                 onClickDeleteInProgress={props.onClickDeleteInProgress}
+                onClickEdit={props.onClickEdit}
+                working={working}
+                isEdit={isEdit}
               />
             </div>
           ))}
@@ -41,8 +46,10 @@ const ToDoListPresenter = (props) => {
           {props.done.map((done) => (
             <div key={done.id}>
               <DoneItem
-                done={done}
                 onClickDeleteDone={props.onClickDeleteDone}
+                onClickEdit={props.onClickEdit}
+                done={done}
+                isEdit={isEdit}
               />
             </div>
           ))}
